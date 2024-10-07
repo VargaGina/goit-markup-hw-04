@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -27,12 +27,20 @@
     </div>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Effective Solutions for Your Business</h1>
-                <a href="#" class="button">Order Service</a>
+        <div class="hero">
+            <h1>Effective Solutions for Your Business</h1>
+            <a href="#" class="button" id="orderServiceButton">Order Service</a> <!-- Button to open the modal -->
+        </div>
+        
+        <!-- Modal Structure -->
+        <div class="modal" id="orderServiceModal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModalButton">&times;</span> <!-- Close button -->
+                <h2>Order Service</h2>
+                <p>Effective Solutions for Your Business</p>
             </div>
-        </section>
+        </div>
+
 
         <div class="container">
             <section class="services">
@@ -207,6 +215,9 @@
             </svg>
         </div>
     </footer>
+    <!-- All your markup, including modal markup -->
+    <!-- Put before the closing body tag -->
+    <script src="./js/modal.js"></script>
 
 </body>
 
