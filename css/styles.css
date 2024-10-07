@@ -31,6 +31,12 @@ body {
 .menu li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #007bff;
+    
 }
 
 address a {
@@ -59,6 +65,12 @@ address a {
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+
 }
 
 .services {
@@ -97,6 +109,9 @@ address a {
 
 .team-list img {
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    
 }
 
 .social-icons {
@@ -110,4 +125,30 @@ address a {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .service-list {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .team-list {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+ 
+    }
+
+    .button {
+        width: 100%;
+        
+    }
 }
